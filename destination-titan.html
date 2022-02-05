@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="stylesheet" href="assets/style/destination.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+
+  <main class="component">
+    <div class="logo-wrapper">
+      <img src="assets/shared/logo.svg" href="index.html" class="logo" alt="">
+    </div>
+    <div class="line-wrapper">  </div>
+  
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a href="index.html" id="home" class="nav-list-link">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#!" id="destination" class="nav-list-link active">Destination</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#!" id="crew" class="nav-list-link">Crew</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#!" id="technology" class="nav-list-link">Technology</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+  </main>
+
+  <section class="destination">
+      <div class="destination-wrapper">
+          <h1 class="destination-picker">01 <span>PICK YOUR DESTINATION</span></h1>
+          <div class="planet-img">
+              <img src="assets/destination/image-titan.png" alt="planet-image" class="planet">
+            </div>
+        </div>
+
+        <div class="info-wrapper">
+            <ul class="planet-list">
+                <li class="planet-item">
+                    <a href="destination.html" class="planet-link">MOON</a>
+                </li>
+                <li class="planet-item">
+                    <a href="destination-mars.html" class="planet-link">MARS</a>
+                </li>
+                <li class="planet-item">
+                    <a href="destination-europa.html" class="planet-link">EUROPA</a>
+                </li>
+                <li class="planet-item">
+                    <a href="#!" class="planet-link active">TITAN</a>
+                </li>
+            </ul>
+            
+            <div class="planet-description">
+                <h2 class="planet-name">TITAN</h2>
+                <p class="planet-info">
+                    The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+                </p>
+            </div>
+            
+            <div class="distance-accordian">
+                <div class="accordian-item">
+                    <h3 class="title">AVG. DISTANCE</h3>
+                    <h2>1.6 bil.kM</h2>
+                </div>
+                <div class="accordian-item">
+                    <h3 class="title">EST. TRAVEL TIME</h3>
+                    <h2>7 YEARS</h2>
+                </div>
+            </div>
+        </div>
+  </section>
+
+
+  
+<script src="assets/js/main.js"></script>
+</body>
+</html>

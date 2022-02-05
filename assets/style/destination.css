@@ -1,0 +1,215 @@
+
+
+body {
+    height : 100vh;
+    background : url('../destination/background-destination-mobile.jpg') no-repeat;
+    background-size : cover;
+    /* display : flex; */
+    width : 100vw;
+    color : white;
+}
+
+.destination  {
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    margin-top : 2rem;
+    padding-top : 1rem;
+    padding-left : 1rem;
+}
+
+.destination-picker {
+    margin-bottom : 10px;
+    font-size : 1.5rem;
+    color : rgb(116, 111, 111);
+}
+
+.destination-picker span {
+    color : white;
+}
+
+.planet-img {
+    height : 200px;
+    width : 220px;
+    position : relative;
+    /* background : white; */
+    cursor : pointer;
+    transition : all .6s ease-in-out;
+}
+.planet-img:hover {
+    transform : scale(1.2);
+}
+.planet {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+}
+
+.planet-list {
+    display : flex;
+    list-style : none;
+    margin-top : 2rem;
+    /* background : white; */
+    padding-right : 15px;
+}
+.planet-item {
+    margin : 0 10px;
+}
+.planet-link {
+    text-decoration : none;
+    font-size : 1.2rem;
+    color : white;
+    transition : all .5s ease-in-out;
+    position : relative;
+    padding-bottom : 3px;
+}
+.planet-link:hover {
+    color : rgb(235, 99, 240);
+}
+.planet-link:after {
+    content : "";
+    position : absolute;
+    width : 0%;
+    height : 2px;
+    background : white;
+    bottom : 0;
+    left : 0;
+    transition : all .5s ease-in;
+}
+.planet-link.active:after {
+    width : 100%;
+}
+.planet-link:hover:after {
+    width : 100%;
+}
+
+
+.planet-description {
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    margin-top : .8rem;
+    padding-left : 1rem;
+    padding-right : 1rem;
+}
+.planet-name {
+    font-size : 2rem;
+    padding-bottom : 10px;
+}
+.planet-info {
+    text-align : center;
+    padding-bottom : 10px;
+    padding-right : 10px;
+    font-size : 1.1rem;
+    border-bottom : 1px solid rgba(255, 255, 255, 0.253);
+}
+
+.distance-accordian {
+    margin-top : .7rem;
+}
+.accordian-item {
+    margin : 5px 0;
+}
+
+.title {
+    font-size : .9rem;
+    font-weight : lighter;
+    color : rgb(138, 132, 132);
+    text-align : center;
+}
+.accordian-item h2 {
+    text-align : center;
+    padding-top : 5px;
+    font-size : 1.2rem;
+    font-weight : lighter;
+}
+
+
+@media (min-width : 1079px) {
+
+    body {
+        background : url(../destination/background-destination-desktop.jpg) no-repeat;
+        background-size : cover;
+    }
+
+    .destination  {
+        margin-top : 12rem;
+        display : flex;
+        flex-direction : row;
+        justify-content : space-evenly;
+        align-items : center;
+        padding-left : 2rem;
+        margin-left : 2rem;
+        position : relative;
+        /* background : white; */
+    }
+
+    .destination-wrapper {
+        display : flex;
+        flex-direction : column;
+    }
+
+    .destination-picker {
+        font-weight : lighter;
+        font-size : 1.7rem;
+        margin-bottom : 2rem;
+    }
+    .planet-img {
+        margin-top : 2rem;
+        height : 450px;
+        width : 450px
+    }
+
+    .info-wrapper {
+        display : flex;
+        flex-direction : column;
+        justify-content : center;
+        align-items : center;
+        margin-left : 1.5rem;
+        width : 23rem;
+        background : rgba(255, 255, 255, 0.041);
+        position : relative;
+        top : 3rem;
+        backdrop-filter : blur(10px);
+        border-radius : 10px;
+    }
+
+    .planet-list {
+        display : flex;
+        justify-content : flex-start;
+        text-align : start;
+        align-items : flex-start;
+        padding-left : 0;
+    }
+
+    .planet-description {
+        display : flex;
+        justify-content : flex-start;
+        text-align : start;
+        align-items : flex-start;
+    }
+    .planet-name {
+        font-size : 6.5rem;
+        /* text-align : center; */
+        /* align-self : center; */
+        letter-spacing: 5px;
+        padding-left : 1rem;
+    }
+    .planet-info {
+        text-align : start;
+        padding-left : 1rem;
+        font-size : 1.2rem;
+    }
+
+    .distance-accordian {
+        display : flex;
+        justify-content : space-around;
+        align-items : center;
+    }
+    .accordian-item {
+        margin : 0 1.5rem;
+        padding-bottom : 1rem;
+    }
+}
