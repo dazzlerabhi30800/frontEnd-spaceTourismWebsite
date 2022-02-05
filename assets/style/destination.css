@@ -29,6 +29,13 @@ body {
     color : white;
 }
 
+.info-wrapper {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-direction : column;
+}
+
 .planet-img {
     height : 200px;
     width : 220px;
