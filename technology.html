@@ -6,8 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="assets/style/style.css">
-  <link rel="stylesheet" href="assets/style/destination.css">
-  <link rel="stylesheet" href="assets/style/crew.css">
+  <!-- <link rel="stylesheet" href="assets/style/destination.css"> -->
+  <!-- <link rel="stylesheet" href="assets/style/crew.css"> -->
+  <link rel="stylesheet" href="assets/style/technology.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   
   <title>Frontend Mentor | Space tourism website</title>
@@ -29,10 +30,10 @@
           <a href="destination.html" id="destination" class="nav-list-link">Destination</a>
         </li>
         <li class="nav-list-item">
-          <a href="#!" id="crew" class="nav-list-link active">Crew</a>
+          <a href="#!" id="crew" class="nav-list-link">Crew</a>
         </li>
         <li class="nav-list-item">
-          <a href="#!" id="technology" class="nav-list-link">Technology</a>
+          <a href="#!" id="technology" class="nav-list-link active">Technology</a>
         </li>
       </ul>
     </nav>
@@ -43,35 +44,32 @@
     
   </main>
 
-  <section class="crew">
-      <div class="crew-wrapper">
-          <h1 class="crew-picker">02 <span>MEET YOUR CREW</span></h1>
-          <div class="crew-img">
-              <img src="assets/crew/image-anousheh-ansari.png" alt="crew-image" class="crewImg">
+  <section class="tech">
+      <div class="tech-wrapper">
+          <h1 class="tech-picker">03 <span>SPACE LAUNCH 101</span></h1>
+          <div class="tech-img">
+              <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="tech-image" class="techImg">
             </div>
         </div>
 
         <div class="info-wrapper">
-            <ul class="crew-list">
-                <li class="crew-item">
-                    <a id="first" href="#!" class="crew-link active"></a>
+            <ul class="tech-list">
+                <li class="tech-item">
+                    <a id="circle1" href="#!" class="tech-link active">1</a>
                 </li>
-                <li class="crew-item">
-                    <a id="second" href="#!"  class="crew-link"></a>
+                <li class="tech-item">
+                    <a id="circle2" href="#!"  class="tech-link">2</a>
                 </li>
-                <li class="crew-item">
-                    <a id="third" href="#!"  class="crew-link"></a>
-                </li>
-                <li class="crew-item">
-                    <a id="fourth" href="#!" class="crew-link"></a>
+                <li class="tech-item">
+                    <a id="circle3" href="#!"  class="tech-link">3</a>
                 </li>
             </ul>
             
-            <div class="crew-description">
-                <h1 class="crew-title">FLIGHT ENGINEER</h1>
-                <h2 class="crew-name">ANOUSHEH ANSARI</h2>
-                <p class="crew-info">
-                    Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+            <div class="tech-description">
+                <h1 class="tech-title">THE TERMINLOGY...</h1>
+                <h2 class="tech-name">LAUNCH VEHICLE</h2>
+                <p class="tech-info">
+                  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
                 </p>
             </div>     
         </div>
@@ -80,7 +78,7 @@
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/data.js"></script>  
-<script src="assets/js/crew.js"></script>
+<script src="assets/js/tech.js"></script>
 
 </body>
 </html>

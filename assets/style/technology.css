@@ -2,31 +2,31 @@
 
 body {
     height : 100vh;
-    background : url('../crew/background-crew-mobile.jpg') no-repeat;
+    background : url('../technology/background-technology-mobile.jpg') no-repeat;
     background-size : cover;
     /* display : flex; */
     width : 100vw;
     color : white;
 }
 
-.crew  {
+.tech  {
     display : flex;
     flex-direction : column;
     justify-content : center;
     align-items : center;
     margin-top : 2rem;
     padding-top : 1rem;
-    padding-left : 1rem;
+    /* padding-left : 1rem; */
 }
 
-.crew-picker {
+.tech-picker {
     margin-bottom : 10px;
     font-size : 1.5rem;
     color : rgb(116, 111, 111);
     text-align : center;
 }
 
-.crew-picker span {
+.tech-picker span {
     color : white;
     font-weight : lighter;
     letter-spacing : 3px;
@@ -40,58 +40,70 @@ body {
     flex-direction : column;
 }
 
-.crew-img {
-    height : 300px;
-    width : 280px;
+.tech-img {
+    height : 270px;
+    width : 110vw;
     position : relative;
-    /* background : white; */
     cursor : pointer;
     transition : all .6s ease-in-out;
     margin-top : 3rem;
-}
-.crew-img:hover {
-    transform : scale(1.1);
-}
-.crewImg {
-    position : absolute;
-    width : 90%;
-    height : 100%;
-    border-bottom : 1px solid #ccc;
     
 }
+.tech-img:hover {
+    transform : scale(1.1);
+}
+.techImg {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    border-radius : 10px;
+    /* border-bottom : 1px solid #ccc;  */
+}
 
-.crew-list {
+.tech-list {
     display : flex;
     list-style : none;
     margin-top : 2rem;
     /* background : white; */
     padding-right : 15px;
 }
-.crew-item {
+.tech-item {
     margin : 0 10px;
-    width : 20px;
+    width : 60px;
     height : 50px;
-    /* background : white; */
-}
-.crew-link {
+    background : rgba(196, 74, 74, 0.123);
+    text-align : center;
     display : flex;
-    width : 60%;
-    height : 13px;
-    /* border : 2.5px solid rgba(255, 255, 255, 0.555); */
+    justify-content : center;
     border-radius : 50%;
-    background-color: rgba(255, 255, 255, 0.26);
+}
+.tech-link {
+    /* display : flex; */
+    width : 100%;
+    height : 50px;
+    border : 2.5px solid rgba(255, 255, 255, 0.555);
+    border-radius : 50%;
+    color : white;
     transition : all .5s ease-in;
     cursor : pointer;
+    text-align : center;
+    align-self : center;
+    font-size : 1.5rem;
+    padding-top : .3rem;
+    text-decoration : none;
+    font-weight : bolder;
 }
-.crew-link.active {
+.tech-link.active {
     background : white;
+    color : rgb(18, 22, 238);
 }
-.crew-link:hover {
+.tech-link:hover {
     background : white;
+    color : rgb(18, 22, 238);
 }
 
 
-.crew-description {
+.tech-description {
     display : flex;
     flex-direction: column;
     justify-content : center;
@@ -100,17 +112,17 @@ body {
     padding-left : 1rem;
     padding-right : 1rem;
 }
-.crew-title {
+.tech-title {
     color : rgba(202, 197, 197, 0.952);
-    font-size : 15px;
+    font-size : 1.2rem;
     font-weight : lighter;
 }
-.crew-name {
+.tech-name {
     font-size : 2rem;
     padding-bottom : 10px;
     font-weight : lighter;
 }
-.crew-info {
+.tech-info {
     text-align : center;
     padding-bottom : 10px;
     padding-right : 10px;
@@ -141,88 +153,104 @@ body {
 @media (min-width : 1079px) {
 
     body {
-        background : url(../crew/background-crew-desktop.jpg) no-repeat;
+        background : url(../technology/background-technology-desktop.jpg) no-repeat;
         background-size : cover;
     }
 
-    .crew  {
+    .tech  {
         margin-top : 12rem;
         display : flex;
-        flex-direction : row;
+        flex-direction : row-reverse;
         justify-content : space-evenly;
         align-items : center;
         padding-left : 2rem;
         margin-left : 2rem;
         position : relative;
+        /* width : 110vw; */
         /* background : white; */
+        margin-bottom : 10rem;
     }
 
-    .crew-wrapper {
+    .tech-wrapper {
         display : flex;
         flex-direction : column;
     }
 
-    .crew-picker {
+    .tech-picker {
         font-weight : lighter;
         font-size : 1.7rem;
         margin-bottom : 2rem;
+        /* position : fixed; */
+        /* right : 55rem; */
     }
-    .crew-img {
+    .tech-img {
         margin-top : 2rem;
-        height : 450px;
-        width : 450px
+        height : 400px;
+        width : 600px;
+        /* left : 10rem; */
+        border : 1px solid rgba(255, 255, 255, 0.219);
+        border-radius : 10px;
+        padding : 5px 5px 5px 5px;
+        padding-left : 1rem; padding-top : .5rem;
+    }
+
+    .techImg {
+        width : 95%;
+        height : 95%;
     }
 
     .info-wrapper {
         display : flex;
         flex-direction : column;
-        justify-content : center;
-        align-items : center;
+        justify-content : flex-start;
+        align-items : flex-start;
         margin-left : 1.5rem;
         width : 23rem;
-        background : rgba(255, 255, 255, 0.041);
+        /* background : rgba(255, 255, 255, 0.041); */
         position : relative;
         top : 3rem;
-        backdrop-filter : blur(10px);
-        border-radius : 10px;
+        /* backdrop-filter : blur(10px); */
+        /* border-radius : 10px; */
     }
 
-    .crew-list {
+    .tech-list {
         display : flex;
         justify-content : flex-start;
         text-align : start;
         align-items : flex-start;
-        padding-left : 0;
+        padding-left : .5rem;
+
     }
 
-    .crew-description {
+    .tech-description {
         display : flex;
         justify-content : flex-start;
         text-align : start;
         align-items : flex-start;
+        /* background : white; */
+        margin-top : 1rem;
     }
 
-    .crew-title {
-        font-size : 2.5rem;
+    .tech-title {
+        font-size : 1.5rem;
         text-align : center;
-        align-self : center;
-        color : gray;
+        color : rgb(221, 216, 216);
     }
 
-    .crew-name {
+    .tech-name {
         font-size : 2.5rem;
-        letter-spacing: 5px;
-        padding-left : 1.5rem;
-        padding-right : 1rem;
-        color : rgb(14, 119, 240);
-        text-shadow : 5px 5px 10px #1a30f58c,
-                      5px 5px 10px rgba(241, 63, 146, 0.308);
-        text-align : center;
+        letter-spacing: 2px;
+        /* padding-right : 1rem; */
+        color : rgb(243, 242, 247);
+        font-weight : bolder;  
+        white-space : no-wrap;
+        padding : 5px 0 5px 0;
     }
-    .crew-info {
+    .tech-info {
         text-align : start;
-        padding-left : 1rem;
-        font-size : 1.2rem;
+        /* padding-left : 1rem; */
+        font-size : 1.4rem;
+        color : rgb(245, 241, 241);
     }
 
     .distance-accordian {
